@@ -1,36 +1,22 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background-color: rgb(188, 229, 236);
 }
-.introBlock{
-    border: 1px solid;
-    display: flex;
-    width: 30%;
-    margin: 50px auto;
-    flex-direction: row;
-}
-.introBlock > input{
-    border: 0px;
-    border-radius: 2px;
-    border-bottom: 4px solid navy ;
-    width: 70%;
-    background-color: rgb(188, 229, 236);
-    display: block;
-
-}
-.introBlock > input:focus{
-    border: 0px;
-    border-bottom: 4px solid rgba(22, 126, 196, 0.925);
-
-}
 .mainBlock{
     width: 70%;
-    height: 400px;
+    height: 100%;
     border: 1px solid;
-    margin: 60px auto;
-    padding: 30px 0px 0px 50px;
     background-color: white;
+    padding: 15px 0 0 20px;
     opacity: 0.9;
-    box-shadow: 10px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 2px 4px 2px rgb(21, 106, 155);
+    
+    
 }
 .container-fluid{
     display: flex;
@@ -46,8 +32,7 @@ h1{
     color: black;
 }
 ul{
-    position: relative;
-    right: 40px;
+    padding-left:18px ;
 }
 li{
     list-style: none;
@@ -56,6 +41,8 @@ li{
     padding: 12px;
     width:90%;
     border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #nxtbtn{
     float: right;
@@ -70,4 +57,7 @@ li:hover{
 }
 h3{
     color: white;
+}
+.bottom{
+    margin-bottom: 10px ;
 }

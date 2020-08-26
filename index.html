@@ -4,30 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Document</title>
-	<link rel="stylesheet" href="bootstrap.min.css">
+	
+	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body onload="displayQuestion(0)">
 	<div class="container">
-		<div class="row" >
-			<div class="container-fluid">
+		<div class="row header" >
+			<div class="col-12">
 				<h1>Quiz</h1>
 				<h3 id="username"></h3>
 			</div>
-			<div class="mainBlock" >
+		
+		</div>
+		<div class="row">
+			<div class="col-12 mainBlock">
 				<h1 id="heading">Question 1</h1>
 				<p id="question"></p>
 				<ul>
-						<li id="op1" class="option1" onclick="active(this)"></li>
-						<li id="op2" class="option2" onclick="active(this)"></li>
-						<li id="op3" class="option3" onclick="active(this)"></li>
+						<li id="op1" class="option1 row" onclick="active(this)"></li>
+						<li id="op2" class="option2 row" onclick="active(this)"></li>
+						<li id="op3" class="option3 row" onclick="active(this)"></li>
 				</ul>
-				<div>
+				<div class="col-12 bottom">
 					<button id="backbtn" onclick="previsiousQuestion()" class="btn btn-secondary btn-lg" >Back</button>
 					<button id="nxtbtn" onclick="nextQuestion()" class="btn btn-lg btn-primary">Next</button>
 				</div>
 			</div>
-		</div>
 	</div>
 
 	<script src="app.js"></script>
